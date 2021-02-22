@@ -1,4 +1,7 @@
 const buttonAdd = document.getElementById('button-add');
+const buttonSub = document.getElementById('button-sub');
+const buttonMul = document.getElementById('button-mul');
+const buttonDiv = document.getElementById('button-div');
 const box = document.getElementById('box');
 const inputnum1 = document.getElementById('num1');
 const inputnum2 = document.getElementById('num2');
@@ -35,4 +38,31 @@ function sum(){
   showresult(sum);
 }
 
+function sub(){
+  console.log(getNum1() - getNum2());
+  let sub;
+  sub = getNum1() - getNum2();
+  console.log(sub);
+  showresult(sub);
+}
+
+function mul(){
+  console.log(getNum1() * getNum2());
+  let mul;
+  mul = getNum1() * getNum2();
+  console.log(mul);
+  showresult(mul);
+}
+
+function div(){
+  console.log(getNum1() / getNum2());
+  let div;
+  div = getNum1() / getNum2();
+  console.log(div);
+  showresult(div);
+}
+
 buttonAdd.addEventListener('click', sum);
+buttonSub.addEventListener('click', sub);
+buttonMul.addEventListener('click', mul);
+buttonDiv.addEventListener('click', div);
